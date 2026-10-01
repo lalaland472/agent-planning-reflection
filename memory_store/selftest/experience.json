@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "task": "查询 RAG 领域论文并总结",
+    "outcome": "库内 RAG 主题仅 2 篇，如实说明不足，未凑数",
+    "reflection": "本地论文库 RAG 相关只有 2 篇；检索词换 'retrieval' 可补充；不要为了凑数编造",
+    "ts": "2026-10-01 18:07:21",
+    "hash": "56de98a871a1",
+    "scope": ""
+  },
+  {
+    "id": 1,
+    "task": "对比 Self-RAG 与 Reflexion 的自我纠错机制",
+    "outcome": "两篇摘要读取成功，机制差异对比完成",
+    "reflection": "read_paper 的 key 必须用连字符小写：self-rag / reflexion",
+    "ts": "2026-10-01 18:07:21",
+    "hash": "e37dd0b42f01",
+    "scope": ""
+  },
+  {
+    "id": 2,
+    "task": "计算 2023+2024 并用工具验证",
+    "outcome": "add(2023, 2024)=4047",
+    "reflection": "算术题要用 add 工具，不要让模型心算",
+    "ts": "2026-10-01 18:07:21",
+    "hash": "5a503b4d07ce",
+    "scope": ""
+  },
+  {
+    "id": 3,
+    "task": "检索 2023 年后方法论文",
+    "outcome": "topic='method' 返回 count=0，改用宽泛主题后才命中",
+    "reflection": "论文库主题词与论文标题强相关，'method' 这类泛词检索为空，应改用具体方向词",
+    "ts": "2026-10-01 18:07:21",
+    "hash": "c2801637f027",
+    "scope": ""
+  },
+  {
+    "id": 4,
+    "task": "门禁测试-正常教训",
+    "outcome": "测试结果",
+    "reflection": "read_paper 的 key 必须用连字符小写，如 self-rag",
+    "ts": "2026-10-01 18:07:22",
+    "hash": "c2fcdabc6115",
+    "scope": ""
+  }
+]
